@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社HSB | 北海道・札幌</title>
+    <meta name="description" content="株式会社HSBのコーポレートサイトです。飲食事業を中心に、不動産・自動車関連など多角的に事業を展開し、北海道の暮らしに貢献します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- 基本設定 --- */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 { font-family: 'Noto Serif JP', serif; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* --- レイアウト --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
+        /* --- ヒーローセクション --- */
+        .hero {
+            background-color:rgba(255, 255, 255, 0.6);
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 { font-size: 2rem; margin-bottom: 1rem; letter-spacing: 0.1em; color: #2c3e50; }
+        .hero p { font-size: 1rem; color: #555; letter-spacing: 0.05em; }
+
+        /* --- セクション共通 --- */
+        section { padding: 70px 0; border-bottom: 1px solid #eee; }
+        section h2 { 
+            text-align: center; 
+            font-size: 1.6rem; 
+            margin-bottom: 40px; 
+            letter-spacing: 0.1em;
+            color: #2c3e50;
+        }
+
+        /* --- 会社概要テーブル --- */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { 
+            padding: 16px; 
+            border-bottom: 1px solid #ddd; 
+            text-align: left; 
+            font-size: 0.95rem;
+        }
+        th { width: 30%; background-color: #fcfcfc; font-weight: normal; color: #666; vertical-align: top; }
+
+        /* --- 事業内容 --- */
+        .service-item { margin-bottom: 40px; }
+        .service-item h3 { 
+            font-size: 1.3rem; 
+            border-left: 5px solid #005293; /* 北海道ブルー */
+            padding-left: 15px; 
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .service-content {
+            margin-left: 5px;
+        }
+        
+        /* リストスタイル */
+        .business-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .business-list li {
+            background-color: #f4f4f4;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* --- ボタン --- */
+        .btn {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 16px 48px;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+            letter-spacing: 0.05em;
+        }
+        .btn:hover { opacity: 0.8; }
+        .contact-area { text-align: center; }
+
+        /* --- フッター --- */
+        footer { text-align: center; padding: 30px; background-color: #2c3e50; color: #fff; font-size: 0.8rem; letter-spacing: 0.05em; }
+
+        /* --- スマホ対応 --- */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.6rem; }
+            th, td { display: block; width: 100%; box-sizing: border-box; }
+            th { background: none; border-bottom: none; padding-bottom: 0; font-weight: bold; color: #333; }
+            td { padding-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <p style="letter-spacing: 0.2em; font-size: 0.85rem; margin-bottom: 15px; opacity: 0.7;">株式会社HSB</p>
+        <h1>北海道から、<br>豊かな食と暮らしを。</h1>
+    </div>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>企業理念</h2>
+            <p>
+                株式会社HSBは、北海道・札幌を拠点に活動する総合事業会社です。<br><br>
+                私たちは、北海道の誇る「食」の提供をはじめ、住まいや移動手段といった人々の生活基盤を支える事業まで、多角的な視点でサービスを展開しています。<br><br>
+                地域社会に深く根ざし、皆様の暮らしに安心と豊かさをお届けすることが、私たちの使命です。
+            </p>
+        </section>
+
+        <section id="service">
+            <h2>事業内容</h2>
+            
+            <div class="service-item">
+                <h3>飲食事業</h3>
+                <div class="service-content">
+                    <p>
+                        <strong>「北海道の味覚を、最高のおもてなしで。」</strong><br>
+                        札幌市内にて、厳選された食材を使用したジンギスカン専門店を運営・経営しております。地元のお客様はもちろん、観光で訪れる方々にも北海道の食文化の素晴らしさを提供いたします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <h3>ライフサポート・その他事業</h3>
+                <div class="service-content">
+                    <p style="margin-bottom: 15px;">お客様の生活を多方面からサポートするため、以下の事業を展開・提携しております。</p>
+                    <ul class="business-list">
+                        <li>不動産の売買・賃貸管理</li>
+                        <li>自動車販売・買取・整備</li>
+                        <li>損害保険代理業</li>
+                        <li>海産物・水産加工品の通信販売</li>
+                        <li>各種イベント企画・運営</li>
+                        <li>広告・マーケティング業務</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="company">
+            <h2>会社概要</h2>
+            <table>
+                <tr>
+                    <th>会社名</th>
+                    <td>株式会社HSB</td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>2025年（令和7年）10月16日</td>
+                </tr>
+                <tr>
+                    <th>代表取締役</th>
+                    <td>橋場 大地</td>
+                </tr>
+                <tr>
+                    <th>所在地</th>
+                    <td>〒064-0807<br>北海道札幌市中央区南七条西四丁目2番地6<br>LC拾壱番館3F</td>
+                </tr>
+                <tr>
+                    <th>資本金</th>
+                    <td>200万円</td>
+                </tr>
+                <tr>
+                    <th>事業目的</th>
+                    <td>飲食店の経営、各種催事の企画運営、不動産管理、自動車販売 他</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <div class="contact-area">
+                <h2>お問い合わせ</h2>
+                <p>事業に関するご相談・ご質問は、<br>以下のフォームよりお願いいたします。</p>
+                
+                <a href="#" class="btn" onclick="alert('現在、お問い合わせフォームは準備中です。\n正式公開まで今しばらくお待ちください。'); return false;">お問い合わせフォーム</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2025 HSB Inc. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
